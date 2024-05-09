@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  revmvc:
+    image: ${DOCKER_REGISTRY-}revmvc
+    build:
+      context: .
+      dockerfile: RevMVC/Dockerfile
+
+  tgbot:
+    image: ${DOCKER_REGISTRY-}tgbot
+    build:
+      context: .
+      dockerfile: Services/TgBot/Dockerfile
+

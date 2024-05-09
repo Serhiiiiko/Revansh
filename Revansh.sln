@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevMVC", "RevMVC\RevMVC.csproj", "{5268725F-0979-454B-B4AB-948E9C3D5095}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{EB6B06F8-1454-4475-93A1-0EF45DECA747}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TgBot", "Services\TgBot\TgBot.csproj", "{F0F144F1-6D1E-4394-9A1E-A1125025D39E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5268725F-0979-454B-B4AB-948E9C3D5095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5268725F-0979-454B-B4AB-948E9C3D5095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5268725F-0979-454B-B4AB-948E9C3D5095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5268725F-0979-454B-B4AB-948E9C3D5095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6B06F8-1454-4475-93A1-0EF45DECA747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6B06F8-1454-4475-93A1-0EF45DECA747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6B06F8-1454-4475-93A1-0EF45DECA747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6B06F8-1454-4475-93A1-0EF45DECA747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0F144F1-6D1E-4394-9A1E-A1125025D39E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0F144F1-6D1E-4394-9A1E-A1125025D39E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0F144F1-6D1E-4394-9A1E-A1125025D39E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0F144F1-6D1E-4394-9A1E-A1125025D39E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {990C5F28-ED8A-4252-B281-1ED09206B523}
+	EndGlobalSection
+EndGlobal
