@@ -7,9 +7,23 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RevMVC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" />
 </head>
 <body>
     <header>
+@*         <div class="mode-switch">
+            <button title="Use dark mode" id="dark" class="btn btn-sm btn-default text-secondary">
+                <i class="bi bi-moon"></i>
+            </button>
+            <button title="Use light mode" id="light" class="btn btn-sm btn-default text-secondary">
+                <i class="bi bi-sun"></i>
+            </button>
+            <button title="Use system preferred mode" id="system" class="btn btn-sm btn-default text-secondary">
+                <i class="bi bi-display"></i>
+            </button>
+        </div> *@
+
         <nav class="navbar border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Revansh Tac Group</a>
@@ -33,6 +47,7 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Donations">Donations</a>
                             </li>
                         </ul>
+                        <img src="~/Photo/revgif.gif" width="399" height="399">
                     </div>
                 </div>
             </div>
@@ -46,14 +61,18 @@
         </main>
     </div>
 
+
+
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - RevMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
