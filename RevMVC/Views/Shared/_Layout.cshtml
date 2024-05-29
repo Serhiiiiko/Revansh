@@ -1,11 +1,10 @@
-﻿@inject IViewLocalizer Localizer
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - RevMVC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.css">
@@ -14,12 +13,15 @@
 </head>
 <body>
     <header>
-        <nav class="navbar border-bottom box-shadow mb-3">
+        <nav class="navbar mb-3" style="background-color: #0A3B46;">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Revansh Tac Group</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+@*                     <img src="~/Photo/revpng.png" alt="Revansh Tac Group Logo"> *@
+                    <span>Revansh Tac Group</span>
+                </a>
                 <div class="d-flex align-items-center">
-                    <form method="post" asp-controller="Home" asp-action="SetLanguage" id="languageForm" class="me-3">
-                        <div class="btn-group" role="group">
+                    <form method="post" asp-controller="Home" asp-action="SetLanguage" id="languageForm" class="d-flex align-items-center me-3">
+                        <div class="btn-group language-btn-group" role="group">
                             <button type="submit" name="culture" value="uk-UA" class="btn btn-light">
                                 <span class="flag-icon flag-icon-ua"></span>
                                 <span class="sr-only">@Localizer["Ukrainian"]</span>
@@ -53,7 +55,7 @@
                         </ul>
                     </div>
                     <div class="d-flex justify-content-center mt-3">
-                        <img src="~/Photo/revpng.png" alt="Spinning Image" class="spinning-image" width="220 " height="220">
+                        <img src="~/Photo/revpng.png" alt="Spinning Image" class="spinning-image" width="220" height="220">
                     </div>
                 </div>
             </div>

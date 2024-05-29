@@ -1,31 +1,117 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
-@media (min-width: 576px) {
-    html {
-        font-size: 16px;
+/* For Phones */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+        .navbar-brand img {
+            width: 60px;
+        }
+
+    .navbar {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .offcanvas-body {
+        font-size: 0.75rem;
     }
 }
+
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
 
 body {
-  margin-bottom: 60px;
+    background-color: #B5D0B0; /* Norway background color */
+    color: #0A3B46; /* Text color to contrast with background */
 }
+
+
+
+/* Adjust Button Colors */
+.btn-light {
+    background-color: #B5D0B0; /* Norway button background color */
+    color: #0A3B46; /* Button text color */
+}
+
+    .btn-light:hover, .btn-light:focus {
+        background-color: #0A3B46; /* Button hover background color */
+        color: #B5D0B0; /* Button hover text color */
+    }
+
+
+
+/*Navbar*/
+.navbar {
+    padding: 0.5rem 1rem;
+    font-size: 1.875rem;
+}
+
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #A1BD9C;
+}
+
+    .navbar-brand img {
+        width: 40px;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .navbar-brand span {
+        display: inline-block;
+        vertical-align: middle;
+    }
 
 .navbar-toggler:focus {
     outline: none !important;
     box-shadow: none !important;
 }
 
+.navbar, .offcanvas, .footer {
+    background-color: #0A3B46; /* Blue Dianne background color */
+    color: #B5D0B0; /* Text color to contrast with background */
+}
+.navbar a, .navbar a:hover, .navbar a:focus {
+        color: #B5D0B0; /* Navbar link color */
+    }
+
+
+
+/* Offcanvas styles */
+.offcanvas-header, .offcanvas-body {
+    font-size: 1.875rem;
+    background-color: #0A3B46; /* Blue Dianne background color */
+    color: #B5D0B0; /* Text color to contrast with background */
+}
+
+
+
+/* Language button */
+.language-btn-group .btn {
+    border-color: #0A3B46; /* Колір обвідки */
+    color: #0A3B46; /* Колір тексту */
+}
+
+    .language-btn-group .btn:hover {
+        background-color: #0A3B46; /* Зміна фону при наведенні */
+        color: #fff; /* Колір тексту при наведенні */
+    }
+
+
+
+/* Spinner */
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -35,7 +121,6 @@ body {
         transform: rotate(360deg);
     }
 }
-
 
 .spinning-image {
     animation: spin 10s linear infinite;
