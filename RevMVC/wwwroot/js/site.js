@@ -18,3 +18,13 @@
 //setTheme();
 //document.querySelectorAll('.mode-switch .btn').forEach(e => e.addEventListener('click', () => setTheme(e.id)));
 //window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', () => setTheme());
+
+function copyToClipboard(text) {
+    const el = document.createElement('textarea');
+    el.value = text;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    alert('Text copied');
+}

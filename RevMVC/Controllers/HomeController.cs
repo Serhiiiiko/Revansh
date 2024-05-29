@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using RevMVC.Models;
 using System.Diagnostics;
@@ -26,6 +27,27 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    [HttpPost]
+    public IActionResult SetLanguage(string culture)
+    {
+        // Validate the culture string
+        if (!string.IsNullOrEmpty(culture))
+        {
+            // Set the culture in a cookie
+            Response.Cookies.Append(
+                CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+            );
+        }
+
+        // Redirect back to the referer URL to refresh the page with the new culture
+        var referer = Request.Headers["Referer"].ToString();
+        return Redirect(string.IsNullOrEmpty(referer) ? "~/" : referer);
+    }
+
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
