@@ -1,54 +1,97 @@
 html {
-    font-size: 14px;
-    position: relative;
+    font-size: 18px;
     min-height: 100%;
 }
-
-/* For Phones */
-@media (max-width: 576px) {
-    .navbar-brand {
-        font-size: 1.25rem;
-    }
-
-        .navbar-brand img {
-            width: 60px;
-        }
-
-    .navbar {
-        padding: 0.25rem 0.5rem;
-        font-size: 0.75rem;
-    }
-
-    .offcanvas-body {
-        font-size: 0.75rem;
-    }
-}
-
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
 
 body {
     background-color: #B5D0B0; /* Norway background color */
     color: #0A3B46; /* Text color to contrast with background */
+    font-size: 1.2rem; /* Increase basic text size */
 }
 
+/* Further optimized styles for mobile */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
 
+    .btn-light {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .offcanvas-header, .offcanvas-body {
+        font-size: 1.25rem;
+    }
+
+    .offcanvas {
+        width: 75%;
+    }
+}
+
+table td p {
+    margin-bottom: 0;
+}
+
+table {
+    width: 100%; /* Ensure table fills its container */
+    border-collapse: collapse; /* Remove default spacing between table cells */
+    border-spacing: 0; /* Ensure no spacing between table cells */
+}
+
+    table td {
+        text-align: center; /* Center align text horizontally */
+        vertical-align: middle; /* Center align text vertically */
+        font-weight: bold; /* Make text bold */
+    }
+
+    table tr {
+        border-bottom: 2px solid #0A3B46; /* Add border with specified color */
+    }
 
 /* Adjust Button Colors */
 .btn-light {
-    background-color: #B5D0B0; /* Norway button background color */
-    color: #0A3B46; /* Button text color */
+    background-color: #B5D0B0;
+    color: #0A3B46;
+    font-size: 1.1rem; /* Adjust button text size */
 }
 
-    .btn-light:hover, .btn-light:focus {
-        background-color: #0A3B46; /* Button hover background color */
-        color: #B5D0B0; /* Button hover text color */
+    .btn-light:hover,
+    .btn-light:focus {
+        background-color: #0A3B46;
+        color: #B5D0B0;
     }
 
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
 
+
+.btn-starter {
+    background-color: #0A3B46;
+    color: #B5D0B0;
+    border-radius: 30px; /* Adjust border-radius for rounded corners */
+    padding: 14px 28px; /* Adjust padding for larger size */
+    font-size: 1.2rem; /* Adjust font size */
+    border: none; /* Remove border */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .btn-starter:hover,
+    .btn-starter:focus {
+        background: linear-gradient(135deg, #0A3B46, #0A637C);
+        color: #0A3B46;
+    }
+
+@media (max-width: 768px) {
+    .btn-starter {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        padding: 12px 24px; /* Adjust padding for smaller screens */
+    }
+}
 
 /*Navbar*/
 .navbar {
@@ -111,6 +154,53 @@ body {
 
 
 
+/* Footer styles */
+.footer {
+    background-color: #0A3B46; /* Blue Dianne background color */
+    color: #B5D0B0; /* Text color to contrast with background */
+    padding: 20px 0;
+}
+
+    .footer img {
+        max-width: 100px; /* Adjust as needed */
+        height: auto;
+    }
+
+        .footer .social-icons a {
+            color: #B5D0B0; /* Icon color */
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+
+    .footer .contacts p {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer .contacts ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .footer .contacts ul li {
+            margin-bottom: 5px;
+        }
+
+/* Adjusting padding for better mobile view */
+@media (max-width: 576px) {
+    .footer {
+        padding: 20px 10px;
+    }
+}
+
+/* Adjusting social icons size for smaller screens */
+@media (max-width: 768px) {
+    .footer .social-icons a {
+        font-size: 1.5rem;
+    }
+}
+
+
 /* Spinner */
 @keyframes spin {
     from {
@@ -124,4 +214,67 @@ body {
 
 .spinning-image {
     animation: spin 10s linear infinite;
+}
+
+/* glitch*/
+
+.glitch {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 400px;
+    aspect-ratio: 1; /* Maintain aspect ratio */
+    background-image: url('../Photo/logoblack.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; /* Ensure the background image fits within the container */
+    animation: glitch 3.5s infinite steps(1);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes glitch {
+    0%, 100% {
+        background-image: url('../Photo/logoblack.png');
+        /* Keep other background properties consistent */
+    }
+
+    82% {
+        background-image: url('../Photo/1.png');
+        /* Keep other background properties consistent */
+        opacity: 1;
+    }
+
+    86% {
+        background-image: url('../Photo/2.png');
+        /* Keep other background properties consistent */
+        opacity: 0;
+    }
+
+    90% {
+        background-image: url('../Photo/3.png');
+        /* Keep other background properties consistent */
+        opacity: 1;
+    }
+
+    92% {
+        background-image: url('../Photo/4.png');
+        /* Keep other background properties consistent */
+        opacity: 0;
+    }
+
+    95% {
+        background-image: url('../Photo/5.png');
+        /* Keep other background properties consistent */
+        opacity: 1;
+    }
+
+    99% {
+        background-image: url('../Photo/6.png');
+        /* Keep other background properties consistent */
+        opacity: 0;
+    }
 }

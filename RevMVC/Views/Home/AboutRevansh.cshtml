@@ -1,7 +1,121 @@
 ﻿@{
-    ViewData["Title"] = "About Revansh Group";
+    ViewData["Title"] = "About Revansh";
 }
 
-<div class="container">
-    <p>fsdfs</p>
+<div class="container-fluid">
+    <h1 class="text-center mb-4">Donations</h1>
+
+    <div class="row justify-content-center container-fluid">
+        <div class="col-lg-10">
+            <div class="section mb-4">
+                <h5 class="display-5 text-center">Bank Accounts</h5>
+
+                <table class="table mx-auto mb-3">
+                    <tbody>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>OTP Bank:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="otpBank"><strong>5555 5555 5555 5555</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('otpBank')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Mono Bank:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="monoBank"><strong>5555 5555 5555 5555</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('monoBank')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Privat Bank:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="privatBank"><strong>5555 5555 5555 5555</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('privatBank')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>UkrSib Bank:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="ukrsibBank"><strong>5555 5555 5555 5555</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('ukrsibBank')">Copy</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="text-center">
+                    <p class="lead">PayPal: <a href="mailto:vkakoito@gmail.com">vkakoito@gmail.com</a></p>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="section mb-4">
+                <h5 class="display-5 text-center">Crypto Transfers</h5>
+                <table class="table mx-auto mb-3">
+                    <tbody>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>BTC:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="btc"><strong>16ydRqiu2y9VVhaByeZD4ZxBbnsA8TRb99W</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('btc')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>ETH:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="eth"><strong>0xce2497a387c31c57ert257d1b00c37b4ee4c732f</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('eth')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>TRC20:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="trc20"><strong>TUCi52wocgduyhYf621hX715ESYVgGbyy</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('trc20')">Copy</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr>
+
+            <div class="section mb-4">
+                <h5 class="display-5 text-center">UAH Transfers</h5>
+                <table class="table mx-auto mb-3">
+                    <tbody>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Recipient: </strong></p></td>
+                            <td class="text-center"><p class="lead"><strong>BO "FOUNDATION"</strong></p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Recipient Code: </strong></p></td>
+                            <td class="text-center"><p class="lead"><strong>212121212</strong></p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Bank Name: </strong></p></td>
+                            <td class="text-center"><p class="lead"><strong>PrivatBank</strong></p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Account</strong></p></td>
+                            <td class="text-center"><p class="lead" id="iban1"><strong>UA1000000000000000000000000</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('iban1')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Recipient: </strong></p></td>
+                            <td class="text-center"><p class="lead"><strong>Charitable Organization "Charity Fund</strong>"</p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Recipient Code: </strong></p></td>
+                            <td class="text-center"><p class="lead"><strong>212121212</strong></p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Bank Name: </strong></p></td>
+                            <td class="text-center"><p class="lead"><strong>Oschadbank</strong></p></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Account:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="iban2"><strong>UA1000000000000000000000000</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('iban2')">Copy</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr>
+        </div>
+    </div>
 </div>
