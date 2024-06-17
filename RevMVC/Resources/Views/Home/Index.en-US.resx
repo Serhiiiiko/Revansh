@@ -117,16 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="bw" xml:space="preserve">
-    <value>building Web apps with ASP.NET Core</value>
-  </data>
-  <data name="Home" xml:space="preserve">
-    <value>Revansh</value>
-  </data>
-  <data name="Learn about" xml:space="preserve">
-    <value>Learn about</value>
+  <data name="Click" xml:space="preserve">
+    <value>Click on logo to support 'Revansh'</value>
   </data>
   <data name="Welcome" xml:space="preserve">
-    <value>Welcome to our site</value>
+    <value>Together to Victory: Support Revansh Troops!</value>
   </data>
 </root>

@@ -120,11 +120,29 @@
   <data name="About" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="ActiveFund" xml:space="preserve">
+    <value>Active Fundraising</value>
+  </data>
+  <data name="ContactInf" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="Donations" xml:space="preserve">
+    <value>Donations</value>
+  </data>
   <data name="English" xml:space="preserve">
     <value>English</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>Main Page</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Reports</value>
   </data>
   <data name="Select Language" xml:space="preserve">
     <value>Select Language</value>

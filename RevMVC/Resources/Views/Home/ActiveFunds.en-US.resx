@@ -117,4 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ActiveF" xml:space="preserve">
+    <value>Active needs</value>
+  </data>
+  <data name="DescFund1" xml:space="preserve">
+    <value>Donation for quadcopter</value>
+  </data>
+  <data name="DescFund2" xml:space="preserve">
+    <value>Donation for boat</value>
+  </data>
+  <data name="DescFund3" xml:space="preserve">
+    <value>Donation for EW</value>
+  </data>
+  <data name="df1goal" xml:space="preserve">
+    <value>Goal: 170 000.00</value>
+  </data>
+  <data name="df1head" xml:space="preserve">
+    <value>To perform combat missions, the "Revenge" tactical group requires:</value>
+  </data>
+  <data name="df1param1" xml:space="preserve">
+    <value>Relay</value>
+  </data>
+  <data name="df1param2" xml:space="preserve">
+    <value>Mavic 3 pro</value>
+  </data>
+  <data name="df2goal" xml:space="preserve">
+    <value>Goal: 250 000.00</value>
+  </data>
+  <data name="df2head" xml:space="preserve">
+    <value>To perform combat missions, the "Revenge" group needs a boat with appropriate equipment.</value>
+  </data>
+  <data name="df2param1" xml:space="preserve">
+    <value>Inflatable boat Kolibri KM-450DSL</value>
+  </data>
+  <data name="df2param2" xml:space="preserve">
+    <value>Engine Suzuki DT 30 S</value>
+  </data>
+  <data name="df2param3" xml:space="preserve">
+    <value>Trailer + equipment</value>
+  </data>
+  <data name="df3goal" xml:space="preserve">
+    <value>Goal: 250 000.00</value>
+  </data>
+  <data name="df3head" xml:space="preserve">
+    <value>To perform a combat mission, the "Revenge" tactical group needs a "Synitsa 3" EW station.</value>
+  </data>
+  <data name="df3param1" xml:space="preserve">
+    <value>"Synitsa 3" EW station</value>
+  </data>
+  <data name="dfafterh" xml:space="preserve">
+    <value>For this amount will be purchased:</value>
+  </data>
+  <data name="donations" xml:space="preserve">
+    <value>Donation Page</value>
+  </data>
+  <data name="speech" xml:space="preserve">
+    <value>Every donation and repost brings us closer to victory.</value>
+  </data>
 </root>

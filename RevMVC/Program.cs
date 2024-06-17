@@ -4,8 +4,6 @@ using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.AddServiceDefaults();
-
 builder.Services.AddResponseCompression(options =>
 {
     options.EnableForHttps = true;
@@ -41,7 +39,6 @@ app.UseStaticFiles(new StaticFileOptions
     }
 });
 
-app.MapDefaultEndpoints();
 
 var localizationOptions = app.Services.GetService<IOptions<RequestLocalizationOptions>>()!.Value;
 app.UseRequestLocalization(localizationOptions);

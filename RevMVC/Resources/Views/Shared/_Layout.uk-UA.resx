@@ -120,11 +120,29 @@
   <data name="About" xml:space="preserve">
     <value>Про нас</value>
   </data>
+  <data name="ActiveFund" xml:space="preserve">
+    <value>Актуальні збори</value>
+  </data>
+  <data name="ContactInf" xml:space="preserve">
+    <value>Контактна інформація</value>
+  </data>
+  <data name="Donations" xml:space="preserve">
+    <value>Реквізити</value>
+  </data>
   <data name="English" xml:space="preserve">
     <value>Англійська</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Реванш</value>
+  </data>
+  <data name="MainPage" xml:space="preserve">
+    <value>Головна сторінка</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Звітність</value>
   </data>
   <data name="Select Language" xml:space="preserve">
     <value>Виберіть мову</value>

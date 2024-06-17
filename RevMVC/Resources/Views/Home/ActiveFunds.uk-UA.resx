@@ -117,4 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ActiveF" xml:space="preserve">
+    <value>Актуальні збори</value>
+  </data>
+  <data name="DescFund1" xml:space="preserve">
+    <value>Збір на дрон</value>
+  </data>
+  <data name="DescFund2" xml:space="preserve">
+    <value>Збір на човен</value>
+  </data>
+  <data name="DescFund3" xml:space="preserve">
+    <value>Збір на реб</value>
+  </data>
+  <data name="df1goal" xml:space="preserve">
+    <value>Ціль: 170 000.00</value>
+  </data>
+  <data name="df1head" xml:space="preserve">
+    <value>Для виконання бойових задач, на найгарячіших ділянках фронту, групі БПЛА тактичної групи «Реванш» необхідний:</value>
+  </data>
+  <data name="df1param1" xml:space="preserve">
+    <value>Ретранслятор</value>
+  </data>
+  <data name="df1param2" xml:space="preserve">
+    <value>Mavic 3 pro</value>
+  </data>
+  <data name="df2goal" xml:space="preserve">
+    <value>Ціль: 250 000.00</value>
+  </data>
+  <data name="df2head" xml:space="preserve">
+    <value>Для виконання бойових задач реваншистам потрібен човен з відповідним обладнанням.</value>
+  </data>
+  <data name="df2param1" xml:space="preserve">
+    <value>Надувний човен Kolibri KM-450DSL</value>
+  </data>
+  <data name="df2param2" xml:space="preserve">
+    <value>Мотор Suzuki DT 30 S</value>
+  </data>
+  <data name="df2param3" xml:space="preserve">
+    <value> Лафета + обладнання.</value>
+  </data>
+  <data name="df3goal" xml:space="preserve">
+    <value>Ціль: 250 000.00</value>
+  </data>
+  <data name="df3head" xml:space="preserve">
+    <value>Для виконання бойової задачі тактична група «Реванш» потребує станцію РЕБ Синиця 3.</value>
+  </data>
+  <data name="df3param1" xml:space="preserve">
+    <value>РЕБ Синиця 3</value>
+  </data>
+  <data name="dfafterh" xml:space="preserve">
+    <value>На цю суму буде закуплено:</value>
+  </data>
+  <data name="donations" xml:space="preserve">
+    <value>Інші реквізити</value>
+  </data>
+  <data name="speech" xml:space="preserve">
+    <value>Кожен ваш донат та репост наближає нашу перемогу.</value>
+  </data>
 </root>

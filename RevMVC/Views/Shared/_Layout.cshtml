@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 </head>
 <body>
@@ -18,43 +19,44 @@
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
                     <span>Revansh Tac Group</span>
                 </a>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center justify-content-center">
                     <form method="post" asp-controller="Home" asp-action="SetLanguage" id="languageForm" class="d-flex align-items-center me-3">
                         <div class="btn-group language-btn-group" role="group">
-                            <button type="submit" name="culture" value="uk-UA" class="btn btn-light">
+                            <button type="submit" name="culture" value="uk-UA" class="btn btn-light align-self-center">
                                 <span class="flag-icon flag-icon-ua"></span>
                                 <span class="sr-only">@Localizer["Ukrainian"]</span>
                             </button>
-                            <button type="submit" name="culture" value="en-US" class="btn btn-light">
+                            <button type="submit" name="culture" value="en-US" class="btn btn-light align-self-center">
                                 <span class="flag-icon flag-icon-gb"></span>
                                 <span class="sr-only">@Localizer["English"]</span>
                             </button>
                         </div>
                     </form>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: transparent; border: none;">
+                    <button class="navbar-toggler align-self-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: transparent; border: none;">
                         <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'%23787878\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');"></span>
                     </button>
                 </div>
+
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Revansh</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Revansh</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">@Localizer["MainPage"]</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutRevansh">About</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ActiveFunds">@Localizer["ActiveFund"]</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Donations">Donations</a>
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutRevansh">@Localizer["Reports"]</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Donations">@Localizer["Donations"]</a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="d-flex justify-content-center mt-3">
-                        <img src="~/Photo/revpng.png" alt="Spinning Image" class="spinning-image" width="220" height="220" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -67,41 +69,38 @@
         </main>
     </div>
 
-
     <!-- Footer -->
-    <footer class="footer mt-auto py-3">
-        <div class="container-fluid">
+    <footer class="footer border-top">
+        <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center">
-                    <img src="~/Photo/logoblack.png" alt="Company Logo" class="img-fluid" style="max-width: 100px;">
+                    <img src="~/Photo/logoblue1.png" alt="Company Logo" class="img-fluid" style="max-width: 100px;">
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="social-icons">
-                        <a href="#" class="btn btn-link"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="btn btn-link"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="btn btn-link"><i class="bi bi-tiktok"></i></a>
-                        <a href="#" class="btn btn-link"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.facebook.com/tacticalgrouprevansh" class="btn btn-link"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/revanche_tactical_group" class="btn btn-link"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/battalion_revanche" class="btn btn-link"><i class="bi bi-tiktok"></i></a>
+                        <a href="https://www.youtube.com/user-ku2od9hg4g" class="btn btn-link"><i class="bi bi-youtube"></i></a>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
                     <div class="contacts">
-                        <p>Contact Information</p>
+                        <p>@Localizer["ContactInf"]</p>
                         <ul>
-                            <li>Email: contact@example.com</li>
-                            <li>Phone: +1234567890</li>
+                            <li>Email: revanchetacticalgroup@gmail.com</li>
+                            <li>@Localizer["Phone"]: +380730935588</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
- 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

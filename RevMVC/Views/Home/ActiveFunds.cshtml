@@ -1,0 +1,118 @@
+﻿@{
+    ViewData["Title"] = Localizer["ActiveF"];
+}
+
+<div class="container">
+    <h1 class="text-center mt-5 mb-5">@Localizer["ActiveF"]</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#fundModal1">
+                <img src="~/Photo/ActiveFund/1dron.jpg" class="card-img-top" alt="Fund 1">
+                <div class="card-body">
+                    <p class="card-text">@Localizer["DescFund1"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#fundModal2">
+                <img src="~/Photo/ActiveFund/1choven.jpg" class="card-img-top" alt="Fund 2">
+                <div class="card-body">
+                    <p class="card-text">@Localizer["DescFund2"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#fundModal3">
+                <img src="~/Photo/ActiveFund/1reb.jpg" class="card-img-top" alt="Fund 3">
+                <div class="card-body">
+                    <p class="card-text">@Localizer["DescFund3"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal templates for each fund -->
+<div class="modal fade" id="fundModal1" tabindex="-1" aria-labelledby="fundModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fundModal1Label">@Localizer["DescFund1"]</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="~/Photo/ActiveFund/1dron.jpg" class="img-fluid" alt="Fund 1 Large">
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>@Localizer["df1head"]</strong></p>
+                        <p><strong>🎯@Localizer["df1goal"] ₴</strong></p>
+                        <p><strong>@Localizer["dfafterh"]</strong></p>
+                        <p><strong>— @Localizer["df1param1"];</strong></p>
+                        <p><strong>— @Localizer["df1param2"];</strong></p>
+                        <p><strong>@Localizer["speech"]</strong></p>
+                        <a href="https://send.monobank.ua/jar/2Qb5JegUom" class="btn btn-black btn-lg btn-block">mono</a>
+                        <a href="@Url.Action("Donations", "Home")" class="btn btn-black btn-lg btn-block">@Localizer["donations"]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="fundModal2" tabindex="-1" aria-labelledby="fundModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fundModal2Label">@Localizer["DescFund2"]</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="~/Photo/ActiveFund/1choven.jpg" class="img-fluid" alt="Fund 2 Large">
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>@Localizer["df2head"]</strong></p>
+                        <p><strong>🎯@Localizer["df2goal"] ₴</strong></p>
+                        <p><strong>@Localizer["dfafterh"]</strong></p>
+                        <p><strong>— @Localizer["df2param1"];</strong></p>
+                        <p><strong>— @Localizer["df2param2"];</strong></p>
+                        <p><strong>— @Localizer["df2param3"];</strong></p>
+                        <p><strong>@Localizer["speech"]</strong></p>
+                        <a href="https://send.monobank.ua/jar/2Qb5JegUom" class="btn btn-black btn-lg btn-block">mono</a>
+                        <a href="@Url.Action("Donations", "Home")" class="btn btn-black btn-lg btn-block">@Localizer["donations"]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="fundModal3" tabindex="-1" aria-labelledby="fundModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fundModal3Label">@Localizer["DescFund3"]</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="~/Photo/ActiveFund/1reb.jpg" class="img-fluid" alt="Fund 3 Large">
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>@Localizer["df3head"]</strong></p>
+                        <p><strong>🎯@Localizer["df3goal"] ₴</strong></p>
+                        <p><strong>@Localizer["dfafterh"]</strong></p>
+                        <p><strong>— @Localizer["df3param1"];</strong></p>
+                        <p><strong>@Localizer["speech"]</strong></p>
+                        <a href="https://send.monobank.ua/jar/2Qb5JegUom" class="btn btn-black btn-lg btn-block">mono</a>
+                        <a href="@Url.Action("Donations", "Home")" class="btn btn-black btn-lg btn-block">@Localizer["donations"]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

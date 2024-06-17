@@ -2,106 +2,144 @@
     ViewData["Title"] = "Donations";
 }
 
-<h1>Donations</h1>
+<h1 class="text-center mb-4">@Localizer["Donations"]</h1>
+<p class="text-center mb-4 pb-4"> @Localizer["DonWelcome"]</p>
 
-<footer class="footer mt-5 py-3">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 border-end">
-                <h5>Реквізити</h5>
-                <p title="Нажмите, чтобы скопировать в буфер обмена">ОТП Банк<br><span onclick="copyToClipboard('5555555555555555')">5555 5555 5555 5555</span></p>
-                <p title="Нажмите, чтобы скопировать в буфер обмена">Моно Банк<br><span onclick="copyToClipboard('5555555555555555')">5555 5555 5555 5555</span></p>
-                <p title="Нажмите, чтобы скопировать в буфер обмена">Приват Банк<br><span onclick="copyToClipboard('5555555555555555')">5555 5555 5555 5555</span></p>
-                <p title="Нажмите, чтобы скопировать в буфер обмена">УкрСиб Банк<br><span onclick="copyToClipboard('5555555555555555')">5555 5555 5555 5555</span></p>
-                <p>PayPal:<br><a href="mailto:vkakoito@gmail.com">vkakoito@gmail.com</a></p>
+<div class="container-fluid">
+    <div class="row justify-content-center container-fluid">
+        <div class="col-lg-10">
+            <div class="section mb-4">
+                <h5 class="display-5 text-center">@Localizer["BankAcc"]</h5>
 
-                <hr class="my-3">
-
-                <img src="qr-code.png" alt="QR Code" class="img-fluid mt-3">
-                <p class="mt-3">Для повної перемоги нам потрібна ваша допомога, наведіть смартфону на QR код, щоб швидко перевести кошти</p>
+                <table class="table mx-auto mb-3 tbl-trr">
+                    <tbody>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>OTP Bank:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="otpBank"><strong>5555 5555 5555 5555</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('otpBank')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Mono Bank:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="monoBank"><strong>5555 5555 5555 5555</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('monoBank')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>Privat Bank:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="privatBank"><strong>5555 5555 5555 5555</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('privatBank')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>UkrSib Bank:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="ukrsibBank"><strong>5555 5555 5555 5555</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('ukrsibBank')">Copy</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <div class="col-md-3 border-end" style="word-wrap: break-word;">
-                <h5>Ппереказ криптовалют</h5>
-                <p title="Нажмите, чтобы скопировать в буфер обмена">BTC:<br><span onclick="copyToClipboard('16ydRqiu2y9VVhaByeZD4ZxBNYsA8TRb99W')">16ydRqiu2y9VVhaByeZD4ZxBNYsA8TRb99W</span></p>
-                <p title="Нажмите, чтобы скопировать в буфер обмена">ETH:<br><span onclick="copyToClipboard('0xce2497a387c31c57eb0257d1b00c37b4ee4c732f')">0xce2497a387c31c57eb0257d1b00c37b4ee4c732f</span></p>
-                <p title="Нажмите, чтобы скопировать в буфер обмена">TRC20:<br>TUCi52wocgdcehYf621hX715ESYVgGbyy</p>
+            <hr>
 
-                <hr class="my-3">
-
-                <p><strong>Складнощі з переказом?</strong><br>Зателефонуй:<br>+380666666666<br>+380736666666</p>
-                <p><strong>По іншим питанням:</strong><br><a href="mailto:vkakoito@gmail.com">vkakoito@gmail.com</a></p>
-
-                <h5 class="mt-4">Ми у соціальних мережах:</h5>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fas fa-paper-plane"></i></a></li>
-                </ul>
+            <div class="section mb-4">
+                <h5 class="display-5 text-center">@Localizer["Crypto"]</h5>
+                <table class="table mx-auto mb-3 tbl-trr">
+                    <tbody>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>BTC:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="btc"><strong>16ydRqiu2y9VVhaByeZD4ZxBbnsA8TRb99W</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('btc')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>ETH:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="eth"><strong>0xce2497a387c31c57ert257d1b00c37b4ee4c732f</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('eth')">Copy</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text-right"><p class="lead"><strong>TRC20:</strong></p></td>
+                            <td class="text-center"><p class="lead" id="trc20"><strong>TUCi52wocgduyhYf621hX715ESYVgGbyy</strong></p></td>
+                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('trc20')">Copy</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
+            <hr>
 
-            <div class="col-md-3 border-end">
-                <h5>Поповнення (UAH)</h5>
-                <p><strong>Найменування одержувача: </strong>БО "ФАУНДЕЙШН"</p>
-                <p><strong>Код одержувача: </strong>212121212</p>
-                <p><strong>Назва банку: </strong>АТ КБ «ПриватБанк»</p>
-                <p title="Нажмите, чтобы скопировать в буфер обмена"><strong>Рахунок одержувача у форматі IBAN:</strong><br><span onclick="copyToClipboard('UA1000000000000000000000000')">UA1000000000000000000000000</span></p>
-
-                <hr class="my-3">
-
-                <p><strong>Найменування одержувача: </strong>БЛАГОДІЙНА ОРГАНІЗАЦІЯ «БЛАГОДІЙНИЙ ФОНД»</p>
-                <p><strong>Код одержувача: </strong>212121212</p>
-                <p><strong>Назва банку: </strong>Головне Управління по м.Києву та Київській області АТ "Ощадбанк"</p>
-                <p title="Нажмите, чтобы скопировать в буфер обмена"><strong>Рахунок одержувача у форматі IBAN:</strong><br><span onclick="copyToClipboard('UA1000000000000000000000000')">UA1000000000000000000000000</span></p>
+            <div class="section mb-4">
+                <h5 class="display-5 text-center mb-3">@Localizer["UAHTransfers"]</h5>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                @Localizer["Bank"] #1
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" style="">
+                            <div class="accordion-body">
+                                <table class="table mx-auto mb-3 tbl-trr">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-right"><p class="lead"><strong>@Localizer["Recipient"]: </strong></p></td>
+                                            <td class="text-center"><p class="lead"><strong>BO "FOUNDATION"</strong></p></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><p class="lead"><strong>@Localizer["RecipientCode"]: </strong></p></td>
+                                            <td class="text-center"><p class="lead"><strong>212121212</strong></p></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><p class="lead"><strong>@Localizer["BankName"]: </strong></p></td>
+                                            <td class="text-center"><p class="lead"><strong>PrivatBank</strong></p></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><p class="lead"><strong>@Localizer["Account"]:</strong></p></td>
+                                            <td class="text-center"><p class="lead" id="iban1"><strong>UA1000000000000000000000000</strong></p></td>
+                                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('iban1')">Copy</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                @Localizer["Bank"] #2
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" style="">
+                            <div class="accordion-body">
+                                <table class="table mx-auto mb-3 tbl-trr">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-right"><p class="lead"><strong>@Localizer["Recipient"]: </strong></p></td>
+                                            <td class="text-center"><p class="lead"><strong>BO "FOUNDATION"</strong></p></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><p class="lead"><strong>@Localizer["RecipientCode"]: </strong></p></td>
+                                            <td class="text-center"><p class="lead"><strong>212121212</strong></p></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><p class="lead"><strong>@Localizer["BankName"]: </strong></p></td>
+                                            <td class="text-center"><p class="lead"><strong>Monobank</strong></p></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><p class="lead"><strong>@Localizer["Account"]:</strong></p></td>
+                                            <td class="text-center"><p class="lead" id="iban2"><strong>UA1000000000000000000000000</strong></p></td>
+                                            <td class="text-center"><button class="btn btn-starter" onclick="copyText('iban2')">Copy</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-md-3">
-                <h5>ПОПОВНЕННЯ ІЗ-ЗА КОРДОНУ (USD)</h5>
-                <p><strong>Company Name: </strong>CO CHARITABLE FOUNDATION</p>
-                <p title="Нажмите, чтобы скопировать в буфер обмена"><strong>IBAN Code:</strong><br><span onclick="copyToClipboard('UA1000000000000000000000000')">UA1000000000000000000000000</span></p>
-                <p><strong>Name of the bank: </strong>JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE</p>
-                <p><strong>Bank SWIFT Code: </strong>PBANUA2X</p>
-                <p><strong>Company address: </strong>02141, Ukraine, Kiev, Mishugi ra st., 10, office 405</p>
-
-                <hr class="my-3">
-
-                <p><strong>Correspondent banks</strong></p>
-                <p><strong>Account in the correspondent bank: </strong>001-1-000080</p>
-                <p><strong>SWIFT Code of the correspondent bank: </strong>CHASUS33</p>
-                <p><strong>Correspondent bank: </strong>JP Morgan Chase Bank, New York, USA</p>
-            </div>
-        </div>
-        <hr class="mt-4 mb-4">
-        <div class="row">
-            <div class="col-md-3">
-                <p>підрозділ</p>
-            </div>
-            <div class="col-md-6 text-center">
-                <!-- You can add content here if needed -->
-            </div>
-            <div class="col-md-3 text-right">
-                <p>Закупівлі</p>
-            </div>
-        </div>
-
-        <hr class="mt-3 mb-4">
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <p class="mb-1">Статут фонду</p>
-                <p class="mb-1">Мапа сайту</p>
-                <p class="mb-0">© 2024</p>
-            </div>
+            <hr>
         </div>
     </div>
-</footer>
-
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js"></script>
-
+</div>

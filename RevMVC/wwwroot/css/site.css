@@ -1,37 +1,182 @@
-html {
+html, body {
+    height: 100%;
+    margin: 0;
     font-size: 18px;
-    min-height: 100%;
+    overflow-x: hidden;
+    background-color: #EAF2EF;
+    color: #2E3A46;
+    font-family: 'Oswald', sans-serif;
 }
 
-body {
-    background-color: #B5D0B0; /* Norway background color */
-    color: #0A3B46; /* Text color to contrast with background */
-    font-size: 1.2rem; /* Increase basic text size */
+/* Flexbox layout for the content wrapper */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+/* Main content takes available space */
+.main-content {
+    flex: 1;
+}
+
+.d-flex.align-items-center {
+    justify-content: center; 
+    margin-top: 3px;
+    justify-content: space-between;  
+}
+
+.card-img-top {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold; 
+    cursor: pointer;
+}
+
+    .btn-black:hover {
+        background-color: #333;
+    }
+
 
 /* Further optimized styles for mobile */
+/* General Mobile Adjustments */
 @media (max-width: 768px) {
+    html {
+        font-size: 9px; /* Slightly reduce base font size for smaller screens */
+    }
+
+    body {
+        font-size: 1rem; /* Adjust body text size */
+    }
+
     .navbar-brand {
-        font-size: 1.5rem;
+        font-size: 0.675rem;
     }
 
+    .offcanvas-body .nav-link {
+        font-size: 3.7rem; /* Adjust the font size as needed */
+    }
     .btn-light {
+        font-size: 0.875rem;
+    }
+
+    .navbar-toggler {
+        font-size: 1.6rem;
+    }
+
+    .navbar {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .btn-starter {
         font-size: 1rem;
+        padding: 12px 24px;
     }
-
-    .navbar-nav .nav-link {
-        font-size: 1rem;
-    }
-
-    .offcanvas-header, .offcanvas-body {
-        font-size: 1.25rem;
-    }
-
-    .offcanvas {
-        width: 75%;
+    
+    .footer .social-icons a {
+        font-size: 1.2rem;
     }
 }
 
+/* Extra Small Devices */
+@media (max-width: 576px) {
+    .footer {
+        padding: 20px 10px;
+    }
+
+        .footer .contacts ul li {
+            font-size: 0.875rem; /* Adjust font size for contact info */
+        }
+}
+
+/* Container Adjustments */
+.container, .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .container, .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container, .container-fluid {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+/* Image and Media Scaling */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem; /* Reduce margin for headers */
+}
+
+p {
+    margin-bottom: 1rem; /* Consistent paragraph spacing */
+}
+
+/* Form Elements */
+input, textarea, select, button {
+    width: 100%; /* Ensure form elements take full width */
+    padding: 0.75rem; /* Adequate padding for touch devices */
+    margin-bottom: 1rem; /* Consistent spacing */
+}
+
+/* Specific Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .gallery img {
+        height: 150px; /* Adjust image height for smaller screens */
+    }
+
+    .accordion-button {
+        font-size: 1rem; /* Adjust accordion button size */
+    }
+
+    .accordion-body {
+        font-size: 0.875rem; /* Adjust accordion body text size */
+    }
+}
+
+/* Additional fine-tuning */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .btn-light, .btn-starter {
+        font-size: 0.875rem;
+        padding: 10px 20px;
+    }
+
+    .footer .social-icons a {
+        font-size: 1.25rem;
+    }
+}
+
+
+
+/*Table styling*/
 table td p {
     margin-bottom: 0;
 }
@@ -49,20 +194,29 @@ table {
     }
 
     table tr {
-        border-bottom: 2px solid #0A3B46; /* Add border with specified color */
+        border-bottom: 2px solid #2E3A46; /* Add border with specified color */
     }
+
+        /* Ensure the border is removed from the last row */
+        table tr:last-of-type {
+            border-bottom: none;
+        }
+.tbl-trr {
+    border-bottom: 2px solid #EAF2EF; /* Add border with specified color */
+}
+
 
 /* Adjust Button Colors */
 .btn-light {
-    background-color: #B5D0B0;
-    color: #0A3B46;
+    background-color: #EAF2EF;
+    color: #2E3A46;
     font-size: 1.1rem; /* Adjust button text size */
 }
 
     .btn-light:hover,
     .btn-light:focus {
-        background-color: #0A3B46;
-        color: #B5D0B0;
+        background-color: #2E3A46;
+        color: #EAF2EF;
     }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
@@ -71,19 +225,21 @@ table {
 
 
 .btn-starter {
-    background-color: #0A3B46;
-    color: #B5D0B0;
+    background-color: #2E3A46;
+    color: #EAF2EF;
     border-radius: 30px; /* Adjust border-radius for rounded corners */
     padding: 14px 28px; /* Adjust padding for larger size */
     font-size: 1.2rem; /* Adjust font size */
     border: none; /* Remove border */
     transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 3px;
+    margin-top: 3px;
 }
 
     .btn-starter:hover,
     .btn-starter:focus {
-        background: linear-gradient(135deg, #0A3B46, #0A637C);
-        color: #0A3B46;
+        background: linear-gradient(135deg, #2E3A46, #2E3A48);
+        color: #2E3A46;
     }
 
 @media (max-width: 768px) {
@@ -102,7 +258,7 @@ table {
 .navbar-brand {
     font-family: 'Orbitron', sans-serif;
     font-size: 2rem;
-    color: #A1BD9C;
+    color: #2E3A46;
 }
 
     .navbar-brand img {
@@ -123,41 +279,68 @@ table {
 }
 
 .navbar, .offcanvas, .footer {
-    background-color: #0A3B46; /* Blue Dianne background color */
-    color: #B5D0B0; /* Text color to contrast with background */
+    background-color: #2E3A46; /* Blue Dianne background color */
+    color: #EAF2EF; /* Text color to contrast with background */
 }
-.navbar a, .navbar a:hover, .navbar a:focus {
-        color: #B5D0B0; /* Navbar link color */
+    .navbar a, .navbar a:hover, .navbar a:focus {
+        color: #EAF2EF; /* Navbar link color */
     }
 
 
 
 /* Offcanvas styles */
-.offcanvas-header, .offcanvas-body {
-    font-size: 1.875rem;
-    background-color: #0A3B46; /* Blue Dianne background color */
-    color: #B5D0B0; /* Text color to contrast with background */
+/* Offcanvas styles */
+.offcanvas {
+    background-color: #2E3A46 !important; /* Blue Dianne background color */
+    color: #EAF2EF !important; /* Text color to contrast with background */
 }
+
+.offcanvas-header {
+    background-color: #2E3A46 !important; /* Blue Dianne background color */
+    color: #EAF2EF !important; /* Text color to contrast with background */
+}
+
+.offcanvas-body {
+    background-color: #2E3A46 !important; /* Blue Dianne background color */
+    color: #EAF2EF !important; /* Text color to contrast with background */
+    font-size: 1.875rem !important;
+}
+
+    .offcanvas-body .nav-link {
+        color: #EAF2EF !important; /* Ensure the nav links are in the correct color */
+    }
+
+        .offcanvas-body .nav-link:hover {
+            color: #B3C4C4 !important; /* Optional: lighter color on hover */
+        }
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23EAF2EF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E') !important;
+}
+
+
 
 
 
 /* Language button */
 .language-btn-group .btn {
-    border-color: #0A3B46; /* Колір обвідки */
-    color: #0A3B46; /* Колір тексту */
+    border-color: #2E3A46; /* Колір обвідки */
+    color: #2E3A46; /* Колір тексту */
 }
 
     .language-btn-group .btn:hover {
-        background-color: #0A3B46; /* Зміна фону при наведенні */
+        background-color: #2E3A46; /* Зміна фону при наведенні */
         color: #fff; /* Колір тексту при наведенні */
     }
 
 
 
 /* Footer styles */
+
+/* Footer styling */
 .footer {
-    background-color: #0A3B46; /* Blue Dianne background color */
-    color: #B5D0B0; /* Text color to contrast with background */
+    background-color: #2E3A46; /* Blue Dianne background color */
+    color: #EAF2EF; /* Text color to contrast with background */
     padding: 20px 0;
 }
 
@@ -166,11 +349,11 @@ table {
         height: auto;
     }
 
-        .footer .social-icons a {
-            color: #B5D0B0; /* Icon color */
-            font-size: 2rem;
-            margin-right: 15px;
-        }
+    .footer .social-icons a {
+        color: #EAF2EF; /* Icon color */
+        font-size: 2rem;
+        margin-right: 15px;
+    }
 
     .footer .contacts p {
         font-weight: bold;
@@ -185,20 +368,6 @@ table {
         .footer .contacts ul li {
             margin-bottom: 5px;
         }
-
-/* Adjusting padding for better mobile view */
-@media (max-width: 576px) {
-    .footer {
-        padding: 20px 10px;
-    }
-}
-
-/* Adjusting social icons size for smaller screens */
-@media (max-width: 768px) {
-    .footer .social-icons a {
-        font-size: 1.5rem;
-    }
-}
 
 
 /* Spinner */
@@ -217,14 +386,23 @@ table {
 }
 
 /* glitch*/
+.nav-link {
+    max-width: 400px;
+    width: 100%; /* Optional: Ensures it does not exceed the parent width */
+}
 
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+/* Glitch element with specified dimensions and animation */
 .glitch {
     width: 100%;
     max-width: 400px;
     height: auto;
     max-height: 400px;
     aspect-ratio: 1; /* Maintain aspect ratio */
-    background-image: url('../Photo/logoblack.png');
+    background-image: url('../Photo/logoblue1.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain; /* Ensure the background image fits within the container */
@@ -235,46 +413,130 @@ table {
     align-items: center;
 }
 
-
 @keyframes glitch {
     0%, 100% {
-        background-image: url('../Photo/logoblack.png');
+        background-image: url('../Photo/logoblue1.png');
         /* Keep other background properties consistent */
     }
 
     82% {
-        background-image: url('../Photo/1.png');
+        background-image: url('../Photo/perv.png');
         /* Keep other background properties consistent */
         opacity: 1;
     }
 
     86% {
-        background-image: url('../Photo/2.png');
+        background-image: url('../Photo/vtor.png');
         /* Keep other background properties consistent */
         opacity: 0;
     }
 
     90% {
-        background-image: url('../Photo/3.png');
+        background-image: url('../Photo/tret.png');
         /* Keep other background properties consistent */
         opacity: 1;
     }
 
     92% {
-        background-image: url('../Photo/4.png');
+        background-image: url('../Photo/chet.png');
         /* Keep other background properties consistent */
         opacity: 0;
     }
 
     95% {
-        background-image: url('../Photo/5.png');
+        background-image: url('../Photo/pyat.png');
         /* Keep other background properties consistent */
         opacity: 1;
     }
 
     99% {
-        background-image: url('../Photo/6.png');
+        background-image: url('../Photo/shest.png');
         /* Keep other background properties consistent */
         opacity: 0;
     }
 }
+
+
+/* Base style for the accordion button */
+.accordion-button {
+    background-color: #2E3A46; /* Blue background color */
+    color: #EAF2EF; /* Green text color */
+    font-size: 1.2rem; /* Increase basic text size */
+    border: none; /* Remove border */
+    outline: none;
+    box-shadow: none; /* Remove default shadow */
+}
+
+    /* Remove the default focus box shadow */
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+
+    /* Style for the accordion button when it's collapsed */
+    .accordion-button.collapsed {
+        background-color: #2E3A46; /* Blue background color */
+        color: #EAF2EF; /* Green text color */
+        border: none; /* Remove border */
+        box-shadow: none; /* Remove default shadow */
+    }
+
+    /* Style for the accordion button when it's expanded */
+    .accordion-button:not(.collapsed) {
+        background-color: #2E3A46; /* Blue background color */
+        color: #EAF2EF; /* Green text color */
+        border: none; /* Remove border */
+        box-shadow: none; /* Remove default shadow */
+    }
+
+/* Style for the accordion body */
+.accordion-body {
+    background-color: #EAF2EF; /* Green background color */
+    color: #2E3A46; /* Blue text color */
+    border: 1px solid #2E3A46; /* Add border */
+    outline: none;
+}
+
+/* Style for the accordion item */
+.accordion-item {
+    background-color: #EAF2EF; /* Green background color */
+    border: none; /* Remove border */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Style for the accordion collapse */
+.accordion-collapse {
+    background-color: #EAF2EF; /* Green background color */
+}
+    /* Remove the white space between accordion items */
+    .accordion-item + .accordion-item {
+        border-top: 1px solid #EAF2EF; /* Add top border to create separation */
+    }
+/* Ensure no white background is applied */
+.accordion-button.collapsed:hover,
+.accordion-button.collapsed:focus,
+.accordion-button:not(.collapsed):hover,
+.accordion-button:not(.collapsed):focus {
+    background-color: #2E3A46; /* Blue background color */
+    color: #EAF2EF; /* Green text color */
+}
+
+
+
+
+/* Specific Table Styling */
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* galery.css */
+.gallery img {
+    cursor: pointer;
+    transition: 0.3s;
+    object-fit: contain;
+    width: 100%;
+    height: 200px; /* Fixed height for consistency */
+}
+
+    .gallery img:hover {
+        transform: scale(1.05);
+    }

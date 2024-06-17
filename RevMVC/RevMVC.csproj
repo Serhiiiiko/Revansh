@@ -29,6 +29,8 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\dist\" />
+    <Folder Include="wwwroot\Photo\ActiveFund\" />
+    <Folder Include="wwwroot\Photo\Reports\" />
   </ItemGroup>
 
 </Project>

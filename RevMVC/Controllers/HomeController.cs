@@ -17,7 +17,6 @@ public class HomeController : Controller
     {
         return View();
     }
-
     public IActionResult AboutRevansh()
     {
         return View();
@@ -25,8 +24,15 @@ public class HomeController : Controller
 
     public IActionResult Donations()
     {
+        _logger.LogInformation("Donations action method called.");
         return View();
     }
+
+    public IActionResult ActiveFunds()
+    {
+        return View();
+    }
+
 
     [HttpPost]
     public IActionResult SetLanguage(string culture)
