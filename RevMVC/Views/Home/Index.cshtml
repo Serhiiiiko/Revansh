@@ -2,14 +2,12 @@
     ViewBag.Title = "Home Page";
 }
 
-
-
 <div class="container"></div>
     <div class="row">
         <div class="col-md-12">
-        <h1 class="text-center mt-5 mb-5 pb-5">@Localizer["Welcome"]</h1>
-        <p class="text-center mt-5 pt-5">@Localizer["Click"]</p>
-    </div>
+            <h1 class="text-center mt-5 mb-5 pb-5">@Localizer["Welcome"]</h1>
+        <p class="text-center mt-5 pt-5"><strong>@Localizer["Click"]</strong></p>
+        </div>
 
     <div class="center-container">
         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Donations">
@@ -18,7 +16,14 @@
             </div>
         </a>
     </div>
-
+    <hr />
+    <div class="col-md-12">
+        <h1 class="text-center mt-5 mb-5 pb-5">@Localizer["AddInf"]</h1>
+        <p class="text-center mb-5">
+            <strong>
+                @Localizer["p1"]--- <a href="https://www.revanshua.com/" class="btn btn-starter">@Localizer["b1"]</a>
+        </strong></p>
+    </div>
 </div>
 
 

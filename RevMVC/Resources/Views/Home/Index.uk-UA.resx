@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddInf" xml:space="preserve">
+    <value>Додаткова інформація</value>
+  </data>
+  <data name="b1" xml:space="preserve">
+    <value>Revansh</value>
+  </data>
   <data name="Click" xml:space="preserve">
     <value>Натисни на логотип для підтримки Реваншу</value>
+  </data>
+  <data name="p1" xml:space="preserve">
+    <value>Цей сайт створений для фінансової підтримки "Реваншу", для переходу на основний сайт</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Об'єднаймо сили заради нашої свободи та майбутнього.</value>

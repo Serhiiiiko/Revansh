@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddInf" xml:space="preserve">
+    <value>Additional Information</value>
+  </data>
+  <data name="b1" xml:space="preserve">
+    <value>Main Site</value>
+  </data>
   <data name="Click" xml:space="preserve">
     <value>Click on logo to support 'Revansh'</value>
+  </data>
+  <data name="p1" xml:space="preserve">
+    <value>This website is created to financially support "Revanch". To go to the main website, click here</value>
   </data>
   <data name="Welcome" xml:space="preserve">
     <value>Together to Victory: Support Revansh Troops!</value>
