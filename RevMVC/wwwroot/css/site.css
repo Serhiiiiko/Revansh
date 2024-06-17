@@ -5,7 +5,7 @@ html, body {
     overflow-x: hidden;
     background-color: #EAF2EF;
     color: #2E3A46;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 /* Flexbox layout for the content wrapper */
@@ -234,13 +234,17 @@ table {
     transition: background-color 0.3s, color 0.3s;
     margin-bottom: 3px;
     margin-top: 3px;
+    /* Add gradient background */
+    background-image: linear-gradient(to right, #2E3A46, #1B2733);
 }
 
     .btn-starter:hover,
     .btn-starter:focus {
-        background: linear-gradient(135deg, #2E3A46, #2E3A48);
-        color: #2E3A46;
+        /* Adjust background gradient on hover and focus */
+        background-image: linear-gradient(to right, #1B2733, #2E3A46);
+        color: #EAF2EF; /* Maintain text color */
     }
+
 
 @media (max-width: 768px) {
     .btn-starter {
@@ -289,20 +293,24 @@ table {
 
 
 /* Offcanvas styles */
-/* Offcanvas styles */
 .offcanvas {
-    background-color: #2E3A46 !important; /* Blue Dianne background color */
-    color: #EAF2EF !important; /* Text color to contrast with background */
+    background-color: #2E3A46 !important;
+    color: #EAF2EF !important;
+    background-image: url('../Photo/backcanv.jpg');
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    opacity: 0.99; /* Adjust opacity for a slight blend */
 }
 
 .offcanvas-header {
-    background-color: #2E3A46 !important; /* Blue Dianne background color */
-    color: #EAF2EF !important; /* Text color to contrast with background */
+    background-color: rgba(46, 58, 70, 0.97) !important; /* Add some transparency */
+    color: #EAF2EF !important;
 }
 
 .offcanvas-body {
-    background-color: #2E3A46 !important; /* Blue Dianne background color */
-    color: #EAF2EF !important; /* Text color to contrast with background */
+    background-color: rgba(46, 58, 70, 0.97) !important; /* Add some transparency */
+    color: #EAF2EF !important;
     font-size: 1.875rem !important;
 }
 
@@ -317,6 +325,7 @@ table {
 .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="%23EAF2EF" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E') !important;
 }
+
 
 
 

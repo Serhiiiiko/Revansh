@@ -1,15 +1,17 @@
 ﻿@{
     ViewData["Title"] = "Donations";
 }
-
-<h1 class="text-center mb-4">@Localizer["Donations"]</h1>
-<p class="text-center mb-4 pb-4"> @Localizer["DonWelcome"]</p>
+@* 
+<h5 class="display-5 text-center mb-4">@Localizer["Donations"]</h5>
+<p class="text-center mb-4 pb-4"> @Localizer["DonWelcome"]</p> *@
+ 
 
 <div class="container-fluid">
     <div class="row justify-content-center container-fluid">
         <div class="col-lg-10">
             <div class="section mb-4">
-                <h5 class="display-5 text-center">@Localizer["BankAcc"]</h5>
+                   
+                <h5 class="display-5 text-center pt-5">@Localizer["BankAcc"]</h5>
 
                 <table class="table mx-auto mb-3 tbl-trr">
                     <tbody>
@@ -39,7 +41,7 @@
 
             <hr>
 
-            <div class="section mb-4">
+            <div class="section mb-4 pt-5">
                 <h5 class="display-5 text-center">@Localizer["Crypto"]</h5>
                 <table class="table mx-auto mb-3 tbl-trr">
                     <tbody>
@@ -64,7 +66,7 @@
 
             <hr>
 
-            <div class="section mb-4">
+            <div class="section mb-4 pt-5">
                 <h5 class="display-5 text-center mb-3">@Localizer["UAHTransfers"]</h5>
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     <div class="accordion-item">
